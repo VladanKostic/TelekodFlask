@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  <h1>Welcome user! </h1><br>
+  <nav class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="{{ url_for('main.mockdata') }}">
+                  <p><img src="static/images/table.png" width="64" height="64" class="d-inline-block align-top" alt="" align="center">
+                      Show table from json file </p>
+              </a>
+  </nav>
+  <nav class="navbar navbar-light bg-light">
+              <a class="navbar-brand" href="{{ url_for('main.graph') }}">
+                  <p><img src="static/images/graph.png" width="64" height="64" class="d-inline-block align-top" alt="" align="center">
+                      Show graph of the payment </p>
+              </a>
+  </nav>
+{% endblock %}
